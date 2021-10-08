@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 1em;
+	background: #dbdbdb;
+    background-image: url("imagens/background2.jpg");
+	font-family: "trebuche ms", Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+#cabecalho{
+	background: #e9e502;
+	padding: 15px;
+	text-align: center;
+}
+
+#barra_lateral{
+    float: left;
+    width: 20%;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.icone_lateral{
+    background: white;
+    padding: 3px;
+    border-radius: 5px;
+    width: 20px;
+}
+
+#conteudo_principal{
+    /*display: none;*/
+    float: right;
+    width: 70%;
+    margin-top: 30px;
+}
+
+#tela{
+    position: relative;
+    right: 75px;
+    width: 650px;
+    height: auto;
+    margin: 0 0 5% 0;
+}
+
+.configuracoes{
+    border: 2px solid yellow;
+    background: white;
+    margin-top: 3px;
+}
+
+.icone_saida{
+    float: right;
+}
+
+#caixa-mensagem{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 100px;
+}
+
+#tela_mensagem{
+    border: 2px solid yellow;
+    background: white;
+    height: 100px;
+    padding: 5px;
+}
+
+p.tela_mensagem{
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+p.tela_mensagem_recebida{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#barra_escrita{
+    border: 1px solid yellow;
+    background-color: rgb(228, 231, 24);
+    height: 20px;
+    padding: 3px;
+}
+
+.envio{
+    float: right;
+}
+
+.caixa_escrita{
+    width: 90%;
+    float: left;
+}
