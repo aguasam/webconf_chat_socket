@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WebConf</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="chat_socket/caixa_texto.css">
+		<link rel="stylesheet" type="text/css" href="css/icones/uicons-regular-rounded/css/uicons-regular-rounded.css">
+		<link rel="stylesheet" href="/css/main.css" />
+
+	<body>
+		<!-- Div com o formulário de acesso, para inserir o apelido -->
+		
+		<div id='acesso_usuario'>
+			<form id='login'>
+				<input type='text' placeholder='Insira seu apelido' name='apelido' id='apelido' />
+				<input type='submit' value='Entrar' />
+			</form>
+		</div>
+		
+		<div id="cabecalho">
+			<h1>WebConf</h1>
+		</div>
+
+		<div id="conteudo_principal">
+			<div id="tela">
+				<div class="monitor" id="videos">
+					<video id="localVideo" autoplay muted playsinline></video>
+    				<video id="remoteVideo" autoplay playsinline></video>
+				</div>
+
+				<div class="configuracoes">
+					<span class="fi fi-rr-volume"></span>
+					<span class="fi fi-rr-compress"></span>
+					<span class="fi fi-rr-expand"></span>
+					<span class="fi fi-rr-eye-crossed"></span>
+					<span class="fi fi-rr-eye"></span>
+					<div class="icone_saida">
+						<span class="fi fi-rr-user-remove"></span>
+					</div>
+					
+				</div>
+			</div>
+
+
+			<!-- Div onde fica o painel de mensagens e lista de usuários -->
+			<div id='sala_chat'>
+				<div id="historico_mensagens"></div>
+				<form id='chat'>
+					<input type='text' id='texto_mensagem' name='texto_mensagem' />
+					<input type='submit' value='Enviar mensagem!' />	
+				</form>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+		<script src="js/main.js"></script>
+		<script src="chat_socket/chat_config.js"></script>
+		
+
+	</body>
+</html>
